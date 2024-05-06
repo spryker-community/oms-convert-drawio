@@ -52,7 +52,7 @@ class ConvertConsole extends Console
                 // transition
                 $transitions[(string)$item['id']] = [
                     'source' => (string)$item['source'],
-                    't' => (string)$item['target']
+                    'target' => (string)$item['target']
                 ];
 
                 $transitionPath[(string)$item['source']][(string)$item['target']] = (string)$item['id'];
