@@ -8,14 +8,19 @@ Please design a process in the DrawIO, following next set of rules:
 4. Only 2 transitions are allowed from the diamond, named YES/NO.
 
 ## Installation
-Include into `\Pyz\Zed\Console\ConsoleDependencyProvider::getConsoleCommands` the following class `\Spryker\Zed\OmsConvertDrawIo\Communication\Console\ConvertConsole`.
-I recommend adding this console as a development dependency.
+1. Install the module: 
+    ```bash
+    composer config repositories.oms-convert-drawio vcs https://github.com/spryker-community/oms-convert-drawio
+    composer require spryker-community/oms-convert-drawio
+    ```
+2. Include into `\Pyz\Zed\Console\ConsoleDependencyProvider::getConsoleCommands` instance of the following class `\Spryker\Zed\OmsConvertDrawIo\Communication\Console\ConvertConsole`. 
+   I recommend adding this console as a development dependency.
 
 ## Convert process
 1. Export your diagram into XML format.
 2. Run command:
-```bash
-console oms:convert:drawio <path to the XML file>
-```
+    ```bash
+    console oms:convert:drawio <path to the XML file>
+    ```
 3. OMS process will be located near the XML with the suffix `-process.xml`
 4. Move the process file into the correct location (usually `config/Zed/oms` ) and include process name into `config/Shared/common/config_oms-development.php` `$config[OmsConstants::ACTIVE_PROCESSES]`
