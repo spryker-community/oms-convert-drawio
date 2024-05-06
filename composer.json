@@ -4,7 +4,7 @@
     "description": "OMS process creation from DrawIO diagram.",
     "license": "MIT",
     "require": {
-        "php": ">=8.2",
+        "php": ">=8.1",
         "spryker/kernel": "^3.33.0",
         "spryker/symfony": "^3.2.2",
         "spryker/transfer": "^3.27.0"
