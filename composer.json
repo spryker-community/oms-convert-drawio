@@ -1,0 +1,26 @@
+{
+    "name": "spryker-community/oms-convert-drawio",
+    "type": "library",
+    "description": "OMS process creation from DrawIO diagram.",
+    "license": "MIT",
+    "require": {
+        "php": ">=8.2",
+        "spryker/kernel": "^3.33.0",
+        "spryker/symfony": "^3.2.2",
+        "spryker/transfer": "^3.27.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Spryker\\": "src/Spryker/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "scripts": {
+        "cs-check": "phpcs -p -s --standard=vendor/spryker/code-sniffer/Spryker/ruleset.xml src/ tests/",
+        "cs-fix": "phpcbf -p --standard=vendor/spryker/code-sniffer/Spryker/ruleset.xml src/ tests/"
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
