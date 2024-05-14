@@ -26,3 +26,13 @@ Please design a process in the DrawIO, following next set of rules:
     ```
 3. OMS process will be located near the XML with the suffix `-process.xml`
 4. Move the process file into the correct location (usually `config/Zed/oms` ) and include process name into `config/Shared/common/config_oms-development.php` `$config[OmsConstants::ACTIVE_PROCESSES]`
+
+## Example of conversion
+
+From:
+
+![Diagram in DrawIO](drawio-oms.png)
+
+To:
+
+![Process in Spryker](spryker-oms.png)
