@@ -7,6 +7,6 @@ use Spryker\Zed\Kernel\AbstractBundleDependencyProvider;
 /**
  * @method \Spryker\Zed\OmsConvertDrawIo\OmsConvertDrawIoConfig getConfig()
  */
-class ShipmentGuiDependencyProvider extends AbstractBundleDependencyProvider
+class OmsConvertDrawIoDependencyProvider extends AbstractBundleDependencyProvider
 {
 }

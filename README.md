@@ -6,6 +6,8 @@ Please design a process in the DrawIO, following next set of rules:
 2. Use a diamond for a condition, typing the condition name into it.
 3. Use any arrows as transitions, adding a label to name an event. Event types are not yet supported.
 4. Only 2 transitions are allowed from the diamond, named YES/NO.
+5. Adding on a 2nd line of the event name `on enter` or `onEnter` will recognise transition as `onEnter="true"`
+6. Adding on a 2nd line of the event name `manual` will recognise transition as `manual="true"`
 
 ## Installation
 1. Install the module: 
